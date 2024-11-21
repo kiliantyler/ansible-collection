@@ -1,0 +1,5 @@
+- name: Install dockutil
+  community.general.homebrew:
+    name: dockutil
+    state: present
+  

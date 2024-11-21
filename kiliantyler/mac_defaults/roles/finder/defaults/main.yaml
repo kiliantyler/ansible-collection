@@ -1,0 +1,14 @@
+# yaml-language-server $schema=https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json
+
+Defaults:
+  Finder:
+    ShowFileExtensions: true
+    ShowHiddenFiles: true
+    ShowPathBar: true
+    PreferredViewStyle: Nlsv
+    ShowStatusBar: true
+    SearchScope: SCcf
+    RemoveOldTrash: true
+    ChangeExtensionWarning: false
+    TitlebarIcon: true
+    SidebarIconSize: 3

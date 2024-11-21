@@ -1,0 +1,6 @@
+- name: Tap To Click
+  community.general.osx_defaults:
+    domain: com.apple.AppleMultitouchTrackpad
+    key: Clicking
+    type: int
+    value: "{{ Defaults.Trackpad.TapToClick }}"
