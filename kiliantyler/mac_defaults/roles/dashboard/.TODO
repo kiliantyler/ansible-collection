@@ -1,0 +1,5 @@
+# disable dashboard
+$ defaults write com.apple.Dashboard mcx-disabled -boolean true
+
+# enable dashboard
+$ defaults write com.apple.Dashboard mcx-disabled -boolean false

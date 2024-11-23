@@ -1,0 +1,60 @@
+- name: Save application states on quit ({{ Defaults_System_SaveStateOnQuit }})
+  when: Defaults_System_SaveStateOnQuit != None
+  osx_defaults:
+    domain: com.apple.systempreferences
+    key: NSQuitAlwaysKeepsWindows
+    type: bool
+    value: "{{ Defaults_System_SaveStateOnQuit | bool }}"
+
+- name: Expand save panel by default ({{ Defaults_System_ExpandSavePanel }})
+  when: Defaults_System_ExpandSavePanel != None
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSNavPanelExpandedStateForSaveMode
+    type: bool
+    value: "{{ Defaults_System_ExpandSavePanel | bool }}"
+  notify: Finder Restart
+
+- name: Expand print panel by default ({{ Defaults_System_ExpandPrintPanel }})
+  when: Defaults_System_ExpandPrintPanel != None
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: PMPrintingExpandedStateForPrint
+    type: bool
+    value: "{{ Defaults_System_ExpandPrintPanel | bool }}"
+  notify: Finder Restart
+
+- name: Show extension warning ({{ Defaults_System_ShowExtensionChangeWarning }})
+  when: Defaults_System_ShowExtensionChangeWarning != None
+  osx_defaults:
+    domain: com.apple.finder
+    key: FXEnableExtensionChangeWarning
+    type: bool
+    value: "{{ Defaults_System_ShowExtensionChangeWarning | bool }}"
+  notify: Finder Restart
+
+- name: Warn before emptying the trash ({{ Defaults_System_WarnBeforeEmptyTrash }})
+  when: Defaults_System_WarnBeforeEmptyTrash != None
+  osx_defaults:
+    domain: com.apple.finder
+    key: WarnOnEmptyTrash
+    type: bool
+    value: "{{ Defaults_System_WarnBeforeEmptyTrash | bool }}"
+  notify: Finder Restart
+
+- name: Use F keys as standard function keys ({{ Defaults_System_FKeysStandardFunctions }})
+  when: Defaults_System_FKeysStandardFunctions != None
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.keyboard.fnState
+    type: int
+    value: "{{ Defaults_System_FKeysStandardFunctions|int }}"
+
+- name: Index network storage with Spotlight ({{ Defaults_System_IndexNetworkStorage }})
+  become: true
+  when: Defaults_System_IndexNetworkStorage != None
+  osx_defaults:
+    domain: /Library/Preferences/com.apple.SpotlightServer.plist
+    key: ExternalVolumesIgnore
+    type: bool
+    value: "{{ Defaults_System_IndexNetworkStorage | bool }}"

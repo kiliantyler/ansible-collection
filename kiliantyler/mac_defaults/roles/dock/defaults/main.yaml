@@ -1,23 +1,20 @@
 # yaml-language-server $schema=https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json
-
-Defaults:
-  Dock:
-    ScrollToOpen: true
-    ShowAppExposeGestureEnabled: false
-    ShowHidden: true
-    Pinning: middle
-    MinimizeToApplication: true
-    NoBouncing: false
-    Animations:
-      Launch: true
-      MinimizeEffect: suck
-    Autohide:
-      Enabled: true
-      AnimationDuration: 0.25
-      Delay: 0.1
-    Icons:
-      Size: 42
-      Magnification: true
-      MagnificationSize: 44
-    Position: left
-    ShowRecents: false
+Defaults_Dock_ScrollToOpen: true
+Defaults_Dock_ShowAppExposeGestureEnabled: false
+Defaults_Dock_ShowHidden: true
+Defaults_Dock_Pinning: middle
+Defaults_Dock_MinimizeToApplication: true
+Defaults_Dock_NoBouncing: false
+Defaults_Dock_Animations:
+Defaults_Dock_Animations_Launch: true
+Defaults_Dock_Animations_MinimizeEffect: suck
+Defaults_Dock_Autohide_Enabled: true
+Defaults_Dock_Autohide_AnimationDuration: 0.25
+Defaults_Dock_Autohide_Delay: 0.1
+Defaults_Dock_Icons_Size: 42
+Defaults_Dock_Icons_Magnification: true
+Defaults_Dock_Icons_MagnificationSize: 44
+Defaults_Dock_Position: left
+Defaults_Dock_ShowRecents: false
+Defaults_Dock_ShowIndicators: true
+Defaults_Dock_Animations_ExposeDuration: 0.12

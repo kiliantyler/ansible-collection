@@ -1,0 +1,12 @@
+# enlarging the Icons
+$ defaults write com.apple.Dock springboard-rows -int 4
+$ defaults write com.apple.Dock springboard-columns -int 4
+
+# shrinking the Icons
+$ defaults write com.apple.Dock springboard-rows -int 10
+$ defaults write com.apple.Dock springboard-columns -int 10
+
+# reset to factory seetings
+$ defaults delete com.apple.Dock springboard-rows
+$ defaults delete com.apple.Dock springboard-columns
+$ defaults write com.apple.Dock ResetLaunchPad -bool true

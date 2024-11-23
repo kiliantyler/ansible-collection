@@ -1,0 +1,15 @@
+- name: Ask for a password when leaving the screensaver ({{ Defaults_Screensaver_AskPass }}).
+  when: Defaults_Screensaver_AskPass != None
+  osx_defaults:
+    domain: com.apple.screensaver
+    key: askForPassword
+    type: int
+    value: "{{ Defaults_Screensaver_AskPass|int }}"
+
+- name: "Ask for password delay ({{ Defaults_Screensaver_AskPassSeconds }})"
+  when: Defaults_Screensaver_AskPassSeconds != None
+  osx_defaults:
+    domain: com.apple.screensaver
+    key: askForPasswordDelay
+    type: float
+    value: "{{ Defaults_Screensaver_AskPassSeconds|int }}"

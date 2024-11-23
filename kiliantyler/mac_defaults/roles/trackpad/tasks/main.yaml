@@ -3,4 +3,4 @@
     domain: com.apple.AppleMultitouchTrackpad
     key: Clicking
     type: int
-    value: "{{ Defaults.Trackpad.TapToClick }}"
+    value: "{{ Defaults_Trackpad_TapToClick|int }}"

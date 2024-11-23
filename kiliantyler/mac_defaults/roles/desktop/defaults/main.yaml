@@ -1,9 +1,7 @@
 # yaml-language-server $schema=https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json
 
-Defaults:
-  Desktop:
-    ShowHardDrives: false
-    ShowExternalHardDrives: false
-    ShowRemovableMedia: false
-    ShowMountedServers: false
-    ShowIcons: false
+Defaults_Desktop_ShowHardDrives: false
+Defaults_Desktop_ShowExternalHardDrives: false
+Defaults_Desktop_ShowRemovableMedia: false
+Defaults_Desktop_ShowMountedServers: false
+Defaults_Desktop_ShowIcons: false

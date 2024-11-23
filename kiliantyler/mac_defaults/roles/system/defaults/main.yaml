@@ -1,4 +1,9 @@
 # yaml-language-server $schema=https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json
 
-Defaults:
-  System:
+Defaults_System_SaveStateOnQuit: true
+Defaults_System_ExpandSavePanel: true
+Defaults_System_ExpandPrintPanel: true
+Defaults_System_ShowExtensionChangeWarning: false
+Defaults_System_WarnBeforeEmptyTrash: false
+Defaults_System_FKeysStandardFunctions: false
+Defaults_System_IndexNetworkStorage: false

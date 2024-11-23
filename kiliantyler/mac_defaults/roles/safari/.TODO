@@ -1,0 +1,23 @@
+# disable safari auto open files
+$ defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
+
+# enable safari auto open files
+$ defaults write com.apple.Safari AutoOpenSafeDownloads -bool true
+
+# hide bookmarks bar
+$ defaults write com.apple.Safari ShowFavoritesBar -bool false
+
+# show bookmarks bar
+$ defaults write com.apple.Safari ShowFavoritesBar -bool true
+
+# hide developer menu
+$ defaults write com.apple.Safari IncludeDevelopMenu -bool false
+
+# show developer menu
+$ defaults write com.apple.Safari IncludeDevelopMenu -bool true
+
+# enable tab memory
+$ defaults write com.apple.Safari NSQuitAlwaysKeepsWindows -bool true
+
+# disable tab memory
+$ defaults write com.apple.Safari NSQuitAlwaysKeepsWindows -bool false

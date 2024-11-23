@@ -1,0 +1,97 @@
+COMMAND+SPACE |
+  64 =     {
+      enabled = 1;
+      value =         {
+          parameters =             (
+              65535,
+              49,
+              1048576
+          );
+          type = standard;
+      };
+    };
+
+Bindings:
+  16: Volume Up
+  17: Volume Down
+  18: Mission Control
+  19: Application Windows (App Exposé)
+  21: Exposé All Windows (Show All Windows)
+  22: Show Desktop (Exposé)
+  27: Show All Applications (Cmd+Tab)
+  28: Move Focus to the Next Window (Ctrl+Tab)
+  30: Move Focus to the Previous Window (Ctrl+Shift+Tab)
+  31: Mute (Toggle audio mute)
+  55: Dashboard (if enabled)
+  59: Launchpad
+  63: Show/Hide Finder (Cmd+Tab to Finder)
+  64: Spotlight (Search)
+  65: Take Screenshot (Cmd+Shift+4)
+  66: Zoom In (Accessibility Zoom)
+  67: Zoom Out (Accessibility Zoom)
+  69: Lock Screen (Control+Shift+Power)
+  70: Sleep
+  71: Screen Lock (Lock Screen)
+  72: Toggle Audio Output Device (Switch audio devices)
+  73: Increase Screen Brightness (for MacBooks)
+  74: Decrease Screen Brightness (for MacBooks)
+  75: Open Launchpad (Cmd+Space)
+  77: Open Siri
+  80: Show Siri Preferences
+
+Keys:
+  0: A
+  1: S
+  2: D
+  3: F
+  4: H
+  5: G
+  6: Z
+  7: X
+  8: C
+  9: V
+  11: B
+  12: Q
+  13: W
+  14: E
+  15: R
+  16: T
+  17: Y
+  18: U
+  19: I
+  20: O
+  21: P
+  23: L
+  24: J
+  25: K
+  29: M
+  31: N
+  32: Space
+  35: Return (Enter)
+  36: Tab
+  37: Delete
+  48: Up Arrow
+  49: Down Arrow
+  50: Left Arrow
+  51: Right Arrow
+  56: Escape
+  59: F1
+  60: F2
+  61: F3
+  62: F4
+  63: F5
+  64: F6
+  65: F7
+  66: F8
+  67: F9
+  68: F10
+  69: F11
+  70: F12
+
+Modifiers:
+  Command: 1048576
+  Shift: 131072
+  Option (Alt): 262144
+  Control: 524288
+  CapsLock: 33554432
+  Function: 16777216
